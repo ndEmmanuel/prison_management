@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALC
+
+    </title>
+</head><style>
+   
+   fieldset{
+    background-color:  rgb(236, 234, 232) ;
+    width: fit-content;
+    margin-top: 10%;
+    margin-left: 30%;
+    border-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 10PX 10PX 10PX rgb(228, 222, 213);
+   }
+
+ 
+
+    
+
+button{
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+margin-left: 10px;
+border: none;
+box-shadow: 10PX 10PX 10PX rgb(240, 214, 177);
+
+
+}
+
+.equal{
+    width: 110px;
+    border-radius: 10px;
+}
+#text{
+        width: 220px;
+    height: 40px;
+    border-radius: 20PX;
+    border: none;
+    background-color:white;
+    box-shadow: 5PX  5PX  5PX  5PX rgb(199, 198, 196);
+    
+
+    }
+    input{
+        background-color: rgb(247, 245, 243);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    outline: none;
+margin-left: 3px;
+border: none;
+box-shadow: 10PX 10PX 10PX rgb(199, 195, 189);
+
+
+    }
+    .equal{
+        border-radius: 20PX;
+        width: 118px;
+        background-color: red;
+    }
+
+    
+    
+
+    
+</style>
+<body>
+
+
+
+    <fieldset>
+        <form name="calc">
+        <input type="text" id="text" placeholder="" name="m"><br>
+        <input type="button" id="clear" value="C" onclick="calc.m.value=0000">
+        <input type="button" value="DEL" onclick="calc.m.value=calc.m.value.slice(0,-1)">
+        <input type="button" value="&percnt;" onclick="calc.m.value+='%'">
+        <input type="button" value="/" onclick="calc.m.value+='/'"> <br>
+        <input type="button" value="7" onclick="calc.m.value+=87 ">
+        <input type="button" value="8" onclick="calc.m.value+=8  ">
+        <input type="button" value="9"onclick="calc.m.value+=9  ">
+        <input type="button" value= "&times;" onclick="calc.m.value+='*'"><br>
+        <input type="button" value="4" onclick="calc.m.value+=4  ">
+        <input type="button" value="5" onclick="calc.m.value+=5  ">
+        <input type="button" value="6" onclick="calc.m.value+=6  ">
+        <input type="button" value="-" onclick="calc.m.value+='-'"><br>
+        <input type="button" value="1" onclick="calc.m.value+=1  ">
+        <input type="button" value="2" onclick="calc.m.value+=2  ">
+        <input type="button" value="3" onclick="calc.m.value+=3  ">
+        <input type="button" value="+" onclick="calc.m.value+='+'"><br>
+       <input type="button" value=  "."  onclick="calc.m.value+= '.'  ">
+        <input type="button" value="0" onclick="calc.m.value+=0  ">
+        <input type="button" value="=" class="equal" onclick="calc.m.value=eval(calc.m.value)">
+    </fieldset>
+</body>
+    
+
+</html>
